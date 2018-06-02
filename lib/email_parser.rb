@@ -12,8 +12,8 @@ class EmailParser
 
     emails = emails.split(/[,\s]/)
     emails.delete_if do |ele|
-     ele.length == 0 
-    end 
+     ele.length == 0
+    end
     emails.uniq  
   end
 
