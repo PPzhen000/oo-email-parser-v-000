@@ -6,18 +6,18 @@
 
 class EmailParser
 
-  attr_accessor :emails 
+  attr_accessor :emails
 
   def initialize(emails)
-    @emails = emails 
-  end 
-  
+    @emails = emails
+  end
+
   def parse
-    emails = emails.split(/[,\s]/)
-    emails.delete_if do |ele|
+    @emails = emails.split(/[,\s]/)
+    @emails.delete_if do |ele|
      ele.length == 0
     end
-    emails.uniq
+    @emails.uniq
   end
 
 end
