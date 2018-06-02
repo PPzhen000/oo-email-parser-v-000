@@ -9,7 +9,7 @@ class EmailParser
   email_array = []
 
   def parse
-
+    emails = EmailParser.new 
     emails = emails.split(/[,\s]/)
     emails.delete_if do |ele|
      ele.length == 0
