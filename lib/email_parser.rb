@@ -7,11 +7,11 @@ require 'pry'
 class EmailParser
 
   email_array = []
-   
+
   def parse(emails)
 
     emails = emails.split(/[,\s]/)
     binding.pry 
-  end 
+  end
 
 end
