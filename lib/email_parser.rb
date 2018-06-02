@@ -9,7 +9,7 @@ class EmailParser
   attr_accessor :emails 
 
   def parse
-    emails = EmailParser.new 
+    emails = EmailParser.new
     emails = emails.split(/[,\s]/)
     emails.delete_if do |ele|
      ele.length == 0
